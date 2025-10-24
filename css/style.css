@@ -2300,20 +2300,7 @@ html {
     .blob-1,
     .blob-2,
     .blob-3 {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    .blob-1 {
-        left: -8rem;
-    }
-
-    .blob-2 {
-        right: -8rem;
-    }
-
-    .blob-3 {
-        bottom: -8rem;
+        display: none;
     }
 
     /* Botões fixos */
