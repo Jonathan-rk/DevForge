@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevForge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.3/umd/index.min.js"></script>
+  </head>
+  <body>
+    <div class="parallax-bg"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="nav-brand">
+            <div class="brand-logo">
+              <i data-feather="code"></i>
+            </div>
+            <span class="brand-text">DevForge</span>
+          </div>
+
+          <div class="nav-links">
+            <a href="#home" class="nav-link">Início</a>
+            <a href="#journey" class="nav-link">Jornada</a>
+            <a href="#modules" class="nav-link">Módulos</a>
+            <a href="#transformations" class="nav-link">Transformações</a>
+            <a href="#pricing" class="nav-link">Investimento</a>
+          </div>
+
+          <div class="nav-actions">
+            <button class="btn-gradient">Começar Agora</button>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <div class="mobile-menu-header">
+          <span class="brand-text">DevForge</span>
+          <button id="close-menu">
+            <i data-feather="x"></i>
+          </button>
+        </div>
+        <div class="mobile-menu-links">
+          <a href="#home" class="mobile-nav-link">Início</a>
+          <a href="#journey" class="mobile-nav-link">Jornada</a>
+          <a href="#modules" class="mobile-nav-link">Módulos</a>
+          <a href="#transformations" class="mobile-nav-link">Transformações</a>
+          <a href="#pricing" class="mobile-nav-link">Investimento</a>
+          <button class="btn-gradient mobile-cta">Começar Agora</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span class="status-text"
+                >Turma Aberta • Limitada a 30 vagas</span
+              >
+            </div>
+
+            <h1 class="section-title">
+              Transforme <span class="gradient-text">Ideias em código</span>
+            </h1>
+
+            <p class="hero-description">
+              Domine a arte do desenvolvimento web em 6 meses com uma
+              metodologia imersiva que já formou
+              <span class="highlight">+2.000 desenvolvedores</span> no mercado.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn-gradient btn-primary">
+                Iniciar Jornada
+                <i data-feather="arrow-right"></i>
+              </button>
+              <button class="btn-secondary">
+                <i data-feather="play"></i>
+                Assistir Aula Experimental
+              </button>
+            </div>
+
+            <div class="hero-social">
+              <div class="avatar-group">
+                <img
+                  src="http://static.photos/people/200x200/10"
+                  class="avatar"
+                  alt="Aluno"
+                />
+                <img
+                  src="http://static.photos/people/200x200/11"
+                  class="avatar"
+                  alt="Aluno"
+                />
+                <img
+                  src="http://static.photos/people/200x200/12"
+                  class="avatar"
+                  alt="Aluno"
+                />
+                <img
+                  src="http://static.photos/people/200x200/13"
+                  class="avatar"
+                  alt="Aluno"
+                />
+              </div>
+              <div class="ratings">
+                <div class="stars">
+                  <i data-feather="star" class="star"></i>
+                  <i data-feather="star" class="star"></i>
+                  <i data-feather="star" class="star"></i>
+                  <i data-feather="star" class="star"></i>
+                  <i data-feather="star" class="star"></i>
+                  <span class="rating-text">4.9/5</span>
+                </div>
+                <p class="rating-subtext">+2.000 alunos satisfeitos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="progress-card">
+              <div class="progress-header">
+                <span class="progress-label">Seu Progresso</span>
+                <span class="progress-value">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+
+              <div class="progress-items">
+                <div class="progress-item">
+                  <div class="item-icon">
+                    <i data-feather="lock"></i>
+                  </div>
+                  <div class="item-content">
+                    <h4>Fundamentos</h4>
+                    <p>Inicie sua jornada</p>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="item-icon">
+                    <i data-feather="lock"></i>
+                  </div>
+                  <div class="item-content">
+                    <h4>Frontend</h4>
+                    <p>Crie interfaces incríveis</p>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="item-icon">
+                    <i data-feather="lock"></i>
+                  </div>
+                  <div class="item-content">
+                    <h4>Backend</h4>
+                    <p>Construa APIs robustas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-element el-1"></div>
+            <div class="floating-element el-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <i data-feather="chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number stats-number" data-target="2000">0</div>
+            <p class="stat-label">Alunos Formados</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number stats-number" data-target="95">0</div>
+            <p class="stat-label">% Empregabilidade</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number stats-number" data-target="6">0</div>
+            <p class="stat-label">Meses de Formação</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">
+              R$<span class="stats-number" data-target="8000">0</span>
+            </div>
+            <p class="stat-label">Salário Médio Inicial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="journey-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">SUA JORNADA</span>
+          <h2 class="section-title">
+            Para quem é esta <span class="gradient-text">transformação</span>?
+          </h2>
+          <p class="section-description">
+            Não importa seu ponto de partida. O que importa é onde você quer
+            chegar.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-card card-hover">
+            <div class="card-icon icon-blue">
+              <i data-feather="zap"></i>
+            </div>
+            <h3 class="card-title">Iniciante Absoluto</h3>
+            <p class="card-description">
+              Nunca programou antes? Perfeito! Vamos do zero ao seu primeiro
+              projeto profissional com uma metodologia que realmente funciona.
+            </p>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Lógica de programação do zero</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Apoio individual semanal</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Projetos guiados passo a passo</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="journey-card card-hover">
+            <div class="card-icon icon-purple">
+              <i data-feather="refresh-cw"></i>
+            </div>
+            <h3 class="card-title">Mudança de Carreira</h3>
+            <p class="card-description">
+              Sentindo que estagnou? O mercado tech oferece salários 3x maiores
+              e trabalho remoto. Vamos te preparar para essa transição.
+            </p>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Reconstrução de portfólio</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Preparação para entrevistas</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Network com empresas parceiras</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="journey-card card-hover">
+            <div class="card-icon icon-green">
+              <i data-feather="trending-up"></i>
+            </div>
+            <h3 class="card-title">Aceleração Profissional</h3>
+            <p class="card-description">
+              Já tem alguma experiência mas quer se tornar referência? Vamos
+              elevar seu nível com arquiteturas avançadas e best practices.
+            </p>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Padrões de arquitetura</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Performance e otimização</span>
+              </li>
+              <li class="card-list-item">
+                <i data-feather="check-circle"></i>
+                <span>Liderança técnica</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformations Section -->
+    <section id="transformations" class="transformations-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">TRANSFORMAÇÕES</span>
+          <h2 class="section-title">
+            O que você vai <span class="gradient-text">conquistar</span>
+          </h2>
+          <p class="section-description">
+            Mais que um curso, uma transformação completa que vai redefinir sua
+            carreira
+          </p>
+        </div>
+
+        <div class="transformations-grid">
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-indigo"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="award"></i>
+              </div>
+              <h3 class="transformation-title">Certificado Reconhecido</h3>
+              <p class="transformation-description">
+                Validação oficial de suas competências com selo de excelência
+                reconhecido pelo mercado.
+              </p>
+            </div>
+          </div>
+
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-green"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="users"></i>
+              </div>
+              <h3 class="transformation-title">Mentoria Individual</h3>
+              <p class="transformation-description">
+                Sessões semanais 1:1 com especialistas para acelerar seu
+                aprendizado.
+              </p>
+            </div>
+          </div>
+
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-purple"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="briefcase"></i>
+              </div>
+              <h3 class="transformation-title">Portfólio Impressionante</h3>
+              <p class="transformation-description">
+                7 projetos reais que vão fazer recrutadores te ligarem antes
+                mesmo da entrevista.
+              </p>
+            </div>
+          </div>
+
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-yellow"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="target"></i>
+              </div>
+              <h3 class="transformation-title">Preparação para Entrevistas</h3>
+              <p class="transformation-description">
+                Simulações reais, feedback detalhado e técnicas para dominar
+                qualquer processo seletivo.
+              </p>
+            </div>
+          </div>
+
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-red"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="repeat"></i>
+              </div>
+              <h3 class="transformation-title">Acesso Vitalício</h3>
+              <p class="transformation-description">
+                Todas as atualizações futuras e comunidade exclusiva para
+                networking contínuo.
+              </p>
+            </div>
+          </div>
+
+          <div class="transformation-card card-hover">
+            <div class="card-bg bg-cyan"></div>
+            <div class="card-content">
+              <div class="transformation-icon">
+                <i data-feather="shield"></i>
+              </div>
+              <h3 class="transformation-title">Garantia Blindada</h3>
+              <p class="transformation-description">
+                14 dias para testar sem risco. Se não amar, devolvemos 100% do
+                seu investimento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="modules-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">CURRÍCULO</span>
+          <h2 class="section-title">
+            Sua <span class="gradient-text">jornada de 6 meses</span>
+          </h2>
+          <p class="section-description">
+            Uma trilha de aprendizado completa que te levará do zero ao
+            profissional
+          </p>
+        </div>
+
+        <div class="modules-container">
+          <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <!-- Module 1 -->
+            <div class="module-item">
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-blue">MÓDULO 01</span>
+                    <span class="module-duration">Semana 1-4</span>
+                  </div>
+                  <h3 class="module-title">Fundamentos Essenciais</h3>
+                  <p class="module-description">
+                    Construa uma base sólida com lógica de programação,
+                    algoritmos e os primeiros conceitos que vão sustentar toda
+                    sua carreira.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">Lógica</span>
+                    <span class="module-tag">Algoritmos</span>
+                    <span class="module-tag">JavaScript</span>
+                    <span class="module-tag">Git</span>
+                  </div>
+                </div>
+              </div>
+              <div class="module-marker">
+                <div class="marker-icon icon-blue">
+                  <i data-feather="code"></i>
+                </div>
+              </div>
+              <div class="module-spacer"></div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-item">
+              <div class="module-spacer"></div>
+              <div class="module-marker">
+                <div class="marker-icon icon-green">
+                  <i data-feather="globe"></i>
+                </div>
+              </div>
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-green">MÓDULO 02</span>
+                    <span class="module-duration">Semana 5-8</span>
+                  </div>
+                  <h3 class="module-title">Frontend Master</h3>
+                  <p class="module-description">
+                    Crie interfaces incríveis e responsivas. Domine HTML5, CSS3,
+                    JavaScript moderno e as melhores práticas do mercado.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">HTML5</span>
+                    <span class="module-tag">CSS3</span>
+                    <span class="module-tag">Tailwind</span>
+                    <span class="module-tag">Responsive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-item">
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-purple">MÓDULO 03</span>
+                    <span class="module-duration">Semana 9-12</span>
+                  </div>
+                  <h3 class="module-title">JavaScript Avançado</h3>
+                  <p class="module-description">
+                    Aprofunde-se em ES6+, assincronismo, manipulação de DOM e
+                    padrões avançados que diferenciam profissionais.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">ES6+</span>
+                    <span class="module-tag">Async/Await</span>
+                    <span class="module-tag">APIs</span>
+                    <span class="module-tag">DOM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="module-marker">
+                <div class="marker-icon icon-purple">
+                  <i data-feather="zap"></i>
+                </div>
+              </div>
+              <div class="module-spacer"></div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-item">
+              <div class="module-spacer"></div>
+              <div class="module-marker">
+                <div class="marker-icon icon-yellow">
+                  <i data-feather="layers"></i>
+                </div>
+              </div>
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-yellow">MÓDULO 04</span>
+                    <span class="module-duration">Semana 13-16</span>
+                  </div>
+                  <h3 class="module-title">React & Frameworks</h3>
+                  <p class="module-description">
+                    Construa aplicações modernas e escaláveis com React, hooks,
+                    estado global e ecossistema completo.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">React</span>
+                    <span class="module-tag">Hooks</span>
+                    <span class="module-tag">Redux</span>
+                    <span class="module-tag">Next.js</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-item">
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-red">MÓDULO 05</span>
+                    <span class="module-duration">Semana 17-20</span>
+                  </div>
+                  <h3 class="module-title">Backend & APIs</h3>
+                  <p class="module-description">
+                    Desenvolva APIs robustas com Node.js, Express, bancos de
+                    dados e aprenda a pensar como um backend.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">Node.js</span>
+                    <span class="module-tag">Express</span>
+                    <span class="module-tag">MongoDB</span>
+                    <span class="module-tag">SQL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="module-marker">
+                <div class="marker-icon icon-red">
+                  <i data-feather="server"></i>
+                </div>
+              </div>
+              <div class="module-spacer"></div>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-item">
+              <div class="module-spacer"></div>
+              <div class="module-marker">
+                <div class="marker-icon icon-indigo">
+                  <i data-feather="briefcase"></i>
+                </div>
+              </div>
+              <div class="module-content">
+                <div class="module-card card-hover">
+                  <div class="module-header">
+                    <span class="module-badge badge-indigo">MÓDULO 06</span>
+                    <span class="module-duration">Semana 21-24</span>
+                  </div>
+                  <h3 class="module-title">Carreira & Deploy</h3>
+                  <p class="module-description">
+                    Prepare-se para o mercado: portfólio, LinkedIn, entrevistas
+                    e deploy de aplicações em produção.
+                  </p>
+                  <div class="module-tags">
+                    <span class="module-tag">DevOps</span>
+                    <span class="module-tag">AWS</span>
+                    <span class="module-tag">Portfolio</span>
+                    <span class="module-tag">Career</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">HISTÓRIAS DE SUCESSO</span>
+          <h2 class="section-title">
+            Vidas <span class="gradient-text">transformadas</span>
+          </h2>
+          <p class="section-description">
+            Conheça pessoas reais que mudaram de vida através do código
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card card-hover">
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <img
+                  src="http://static.photos/people/200x200/14"
+                  alt="Mariana Santos"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4 class="testimonial-name">Mariana Santos</h4>
+                  <p class="testimonial-role">
+                    Ex-Vendedora → Frontend Developer
+                  </p>
+                  <div class="testimonial-salary">
+                    <span class="salary-increase">+280% salário</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Em 5 meses passei de vendedora com salário mínimo para
+                desenvolvedora com R$8.000. A metodologia do curso é incrível,
+                me dando confiança e habilidades reais."
+              </p>
+              <div class="testimonial-details">
+                <p class="testimonial-detail">
+                  • Contratada em 3 meses após o curso
+                </p>
+                <p class="testimonial-detail">• Trabalho 100% remoto</p>
+                <p class="testimonial-detail">• Empresa: TechStartup</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card card-hover">
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <img
+                  src="http://static.photos/people/200x200/15"
+                  alt="Pedro Lima"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4 class="testimonial-name">Pedro Lima</h4>
+                  <p class="testimonial-role">
+                    Ex-Motorista → Full Stack Developer
+                  </p>
+                  <div class="testimonial-salary">
+                    <span class="salary-increase">+350% salário</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Com 42 anos e sem experiência prévia, hoje sou Full Stack em
+                uma multinacional. O curso me deu não só conhecimento, mas uma
+                nova perspectiva de vida."
+              </p>
+              <div class="testimonial-details">
+                <p class="testimonial-detail">• Promoção em 6 meses</p>
+                <p class="testimonial-detail">• Líder de equipe atualmente</p>
+                <p class="testimonial-detail">• Empresa: GlobalTech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card card-hover">
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <img
+                  src="http://static.photos/people/200x200/16"
+                  alt="Julia Costa"
+                  class="testimonial-avatar"
+                />
+                <div class="testimonial-info">
+                  <h4 class="testimonial-name">Júlia Costa</h4>
+                  <p class="testimonial-role">Estudante → UX/UI Developer</p>
+                  <div class="testimonial-salary">
+                    <span class="salary-increase"
+                      >Primeiro emprego: R$7.500</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+                <i data-feather="star" class="star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Os projetos do curso foram meu portfólio. Fui contratada ainda
+                no último módulo! Hoje desenvolvo produtos usados por milhões de
+                pessoas."
+              </p>
+              <div class="testimonial-details">
+                <p class="testimonial-detail">• Contratada antes de formar</p>
+                <p class="testimonial-detail">• Trabalha com产品设计</p>
+                <p class="testimonial-detail">• Empresa: DesignHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="instructor-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">SEU MENTOR</span>
+          <h2 class="section-title">
+            Quem vai <span class="gradient-text">guiar sua transformação</span>
+          </h2>
+        </div>
+
+        <div class="instructor-container">
+          <div class="instructor-card">
+            <div class="instructor-image">
+              <img
+                src="http://static.photos/people/640x640/17"
+                alt="Ricardo Mendes"
+              />
+            </div>
+            <div class="instructor-info">
+              <h3 class="instructor-name">Ricardo Mendes</h3>
+              <p class="instructor-title">
+                Senior Software Engineer & Educator
+              </p>
+
+              <p class="instructor-description">
+                Com mais de 12 anos de experiência no mercado tech, passei por
+                empresas como <strong>Google</strong>,
+                <strong>Spotify</strong> e <strong>Nubank</strong>, onde liderei
+                equipes e desenvolvi produtos usados por milhões de pessoas.
+              </p>
+
+              <p class="instructor-description">
+                Minha missão é desmistificar a programação e mostrar que
+                qualquer pessoa, independentemente da formação, pode se tornar
+                um desenvolvedor excepcional. Já ajudei mais de 2.000 alunos a
+                realizar essa transformação.
+              </p>
+
+              <div class="instructor-stats">
+                <div class="instructor-stat">
+                  <div class="stat-icon">
+                    <i data-feather="award"></i>
+                  </div>
+                  <div class="stat-info">
+                    <p class="stat-label">Experiência</p>
+                    <p class="stat-value">12+ anos</p>
+                  </div>
+                </div>
+                <div class="instructor-stat">
+                  <div class="stat-icon">
+                    <i data-feather="users"></i>
+                  </div>
+                  <div class="stat-info">
+                    <p class="stat-label">Alunos</p>
+                    <p class="stat-value">2.000+</p>
+                  </div>
+                </div>
+                <div class="instructor-stat">
+                  <div class="stat-icon">
+                    <i data-feather="briefcase"></i>
+                  </div>
+                  <div class="stat-info">
+                    <p class="stat-label">Empresas</p>
+                    <p class="stat-value">FAANG</p>
+                  </div>
+                </div>
+                <div class="instructor-stat">
+                  <div class="stat-icon">
+                    <i data-feather="star"></i>
+                  </div>
+                  <div class="stat-info">
+                    <p class="stat-label">Avaliação</p>
+                    <p class="stat-value">4.9/5</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="instructor-skills">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Cloud Architecture</span>
+                <span class="skill-tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">INVESTIMENTO</span>
+          <h2 class="section-title">
+            Invista na sua <span class="gradient-text">transformação</span>
+          </h2>
+          <p class="section-description">
+            Um investimento que se paga com seu primeiro salário. O retorno é
+            para toda a vida.
+          </p>
+        </div>
+
+        <div class="pricing-container">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="pricing-badge">OFERTA LIMITADA • ÚLTIMAS VAGAS</span>
+            </div>
+
+            <div class="pricing-content">
+              <h3 class="pricing-title">DevForge Complete</h3>
+              <p class="pricing-subtitle">
+                Acesso completo a toda plataforma por 6 meses
+              </p>
+
+              <div class="pricing-price">
+                <div class="price-main">
+                  <span class="price-amount">R$ 1.997</span>
+                  <span class="price-old">R$ 3.997</span>
+                </div>
+                <span class="price-discount">50% DE DESCONTO</span>
+              </div>
+
+              <div class="pricing-details">
+                <div class="price-option">
+                  <p class="option-label">ou 12x de</p>
+                  <p class="option-value">R$ 166</p>
+                </div>
+                <div class="price-option">
+                  <p class="option-label">Economia de</p>
+                  <p class="option-value">R$ 2.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-features">
+              <h4 class="features-title">Tudo incluído na sua assinatura:</h4>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>6 Módulos completos (24 semanas)</span>
+                </div>
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>Mentoria individual semanal</span>
+                </div>
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>7 projetos reais para portfólio</span>
+                </div>
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>Preparação para entrevistas</span>
+                </div>
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>Acesso vitalício à comunidade</span>
+                </div>
+                <div class="feature-item">
+                  <i data-feather="check-circle"></i>
+                  <span>Certificado de conclusão</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pricing-cta">
+              <div class="guarantee-banner">
+                <i data-feather="shield"></i>
+                <h4>Garantia Blindada 14 Dias</h4>
+                <p>
+                  Teste sem risco. Se não amar o curso, devolvemos 100% do seu
+                  dinheiro.
+                </p>
+              </div>
+
+              <button class="btn-pricing">
+                Garantir Minha Vaga Agora
+                <i data-feather="arrow-right"></i>
+              </button>
+
+              <div class="countdown-timer">
+                <i data-feather="clock"></i>
+                <span
+                  >Oferta termina em
+                  <span class="countdown" data-hours="72">72:00:00</span></span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-security">
+            <i data-feather="lock"></i>
+            <p>Pagamento 100% seguro via Stripe • Parcelamento disponível</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">DÚVIDAS</span>
+          <h2 class="section-title">
+            Perguntas <span class="gradient-text">frequentes</span>
+          </h2>
+          <p class="section-description">
+            Tudo que você precisa saber antes de iniciar sua transformação
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Preciso ter conhecimento prévio em programação?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Não! O curso foi desenhado especificamente para iniciantes
+                  absolutos. Começamos desde os conceitos mais básicos de lógica
+                  de programação e evoluimos gradualmente até tópicos avançados.
+                  Tudo é explicado de forma clara e didática.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Quanto tempo preciso dedicar por semana?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Recomendamos dedicar entre 8-10 horas por semana para
+                  acompanhar o ritmo ideal. Isso inclui aulas, projetos e
+                  mentoria. Mas você tem flexibilidade para estudar no seu
+                  próprio ritmo, pois o acesso é vitalício.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Como funcionam as mentorias individuais?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Você terá sessões semanais de 30 minutos 1:1 com um instrutor
+                  especializado. Nessas sessões, tiramos dúvidas, revisamos seus
+                  projetos, damos feedback personalizado e ajustamos seu plano
+                  de estudos conforme necessário.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>Qual é a taxa de empregabilidade?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  95% dos nossos alunos conseguem emprego na área em até 6 meses
+                  após concluir o curso. O portfólio construído durante o curso
+                  e nossa rede de empresas parceiras fazem toda a diferença.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>O certificado é reconhecido pelo mercado?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim! Nosso certificado é reconhecido por grandes empresas do
+                  mercado tech. Mais importante que o certificado, porém, é o
+                  portfólio com 7 projetos reais que você constrói, que é o que
+                  realmente impressiona os recrutadores.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                <span>E se eu não gostar do curso?</span>
+                <i data-feather="plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Oferecemos garantia incondicional de 14 dias. Se por qualquer
+                  motivo você achar que o curso não é para você, basta nos
+                  enviar um e-mail que devolvemos 100% do seu dinheiro, sem
+                  perguntas ou burocracia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <h2 class="cta-title">
+          Sua carreira tech <span class="cta-highlight">começa agora</span>
+        </h2>
+        <p class="cta-description">
+          O mercado nunca esteve tão aquecido. Milhares de vagas abertas,
+          salários atrativos e a possibilidade de trabalhar de qualquer lugar do
+          mundo.
+        </p>
+
+        <div class="cta-banner">
+          <div class="cta-stats">
+            <div class="cta-stat">
+              <p class="stat-numberf">30</p>
+              <p class="stat-label">Vagas disponíveis</p>
+            </div>
+            <div class="cta-stat">
+              <p class="stat-numberf countdown" data-hours="48">48:00:00</p>
+              <p class="stat-label">Tempo restante</p>
+            </div>
+            <div class="cta-stat">
+              <p class="stat-numberf">R$ 2.000</p>
+              <p class="stat-label">Economia total</p>
+            </div>
+          </div>
+
+          <button class="btn-cta">
+            Sim, quero transformar minha carreira!
+            <i data-feather="arrow-right"></i>
+          </button>
+        </div>
+
+        <p class="cta-security">
+          <i data-feather="shield"></i>
+          Compra 100% segura • Garantia de 14 dias • Suporte especializado
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="brand-info">
+              <div class="brand-logo">
+                <i data-feather="code"></i>
+              </div>
+              <span class="brand-text">DevForge</span>
+            </div>
+            <p class="brand-description">
+              Transformando vidas através do código desde 2018. Já são +2.000
+              histórias de sucesso.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i data-feather="linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i data-feather="youtube"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i data-feather="twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h4 class="link-title">Cursos</h4>
+              <ul class="link-list">
+                <li><a href="#" class="footer-link">Desenvolvimento Web</a></li>
+                <li><a href="#" class="footer-link">Mobile Development</a></li>
+                <li><a href="#" class="footer-link">Data Science</a></li>
+                <li><a href="#" class="footer-link">UI/UX Design</a></li>
+              </ul>
+            </div>
+
+            <div class="link-group">
+              <h4 class="link-title">Empresa</h4>
+              <ul class="link-list">
+                <li><a href="#" class="footer-link">Sobre nós</a></li>
+                <li><a href="#" class="footer-link">Carreiras</a></li>
+                <li><a href="#" class="footer-link">Blog</a></li>
+                <li><a href="#" class="footer-link">Contato</a></li>
+              </ul>
+            </div>
+
+            <div class="link-group">
+              <h4 class="link-title">Suporte</h4>
+              <ul class="link-list">
+                <li><a href="#" class="footer-link">Central de Ajuda</a></li>
+                <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                <li><a href="#" class="footer-link">Privacidade</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            © 2024 DevForge. Todos os direitos reservados.
+          </p>
+          <p class="footer-credit">Feito com ❤️ para transformar carreiras</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/5511999999999"
+      target="_blank"
+      class="whatsapp-button"
+    >
+      <i data-feather="message-circle"></i>
+      <span class="whatsapp-tooltip">Fale com um especialista</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
