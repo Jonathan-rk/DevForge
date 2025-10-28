@@ -7,6 +7,11 @@
     font-family: 'Inter', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
 /* Variáveis CSS */
 :root {
     --primary-color: #3b82f6;
@@ -2293,13 +2298,11 @@ html {
     }
 
     /* Blobs de fundo - mantidos mas reduzidos */
-    .blob {
-        opacity: 0.3;
-    }
 
     .blob-1,
     .blob-2,
-    .blob-3 {
+    .blob-3,
+    .parallax-bg {
         display: none;
     }
 
